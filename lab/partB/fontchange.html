@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Dynamic Font changes</title>
+<script>
+function bigfont()
+{
+var parafont=document.getElementById("para").style;
+parafont.font="bold 25pt times";
+}
+function smallfont()
+{
+var parafont=document.getElementById("para").style;
+parafont.font="normal 8pt times";
+}
+</script>
+</head>
+<body>
+<p id="para" onmouseover="bigfont()" onmouseout="smallfont()">
+web programming by srikanth s</p>
+</body>
+</html>

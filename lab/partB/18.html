@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function printValue() {
+                var age=document.getElementById("t1").value;
+                if (age>18)
+                    window.alert("your age is greater than 18");
+                else
+                    window.alert("your age is lesser than 18");
+                }
+        </script>
+    </head>
+    <body>
+        <form name="f1">
+            age:<input type="text" id="t1"/>
+            <input type="button" value="print" onclick="printValue()"/>
+        </form>
+    </body>
+</html>

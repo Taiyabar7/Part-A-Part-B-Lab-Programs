@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Over and MouseOut</title>
+    <style>
+        #image1{position: absolute;top:50px;left:50px;border:thin;visibility: visible;}
+        #image2{position: absolute;top:50px;left:50px;border:thin;visibility: hidden;}
+    </style>
+    <script>
+        function changeimage()
+        {
+            var imageOne=document.getElementById("image1").style;
+            var imageTwo=document.getElementById("image2").style;
+            if(imageOne.visibility="visible")
+            {
+                imageOne.visibility="hidden";imageTwo.visibility="visible";
+            }
+            else
+            {
+                imageOne.visibility="visible";imageTwo.visibility="hidden";
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="C:\Taiyab_AR\img\peakpx.jpg" alt="zooimage" id="image1" onmouseover="changeimage()" onmouseout="changeimage()"/>
+    <img src="C:\Taiyab_AR\img\wallhaven-rr3x3m.jpg" alt="zooimage1" id="image2" onmouseover="changeimage()" onmouseout="changeimage()"/>
+</body>
+</html>

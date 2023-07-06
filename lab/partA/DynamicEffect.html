@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #layer1{position:absolute;top:50px;left:50px;}
+        #layer2{position:absolute;top:50px;left:150px;}
+        #layer3{position:absolute;top:50px;left:250px;}
+</style>
+<script>
+    function moveimage(layer)
+    {
+        var top=window.prompt("Enter top value");
+        var left=window.prompt("Enter left value");
+        document.getElementById(layer).style.top=top+'px';
+        document.getElementById(layer).style.left=left+'px';
+    }
+</script>
+</head>
+<body>
+    <div id ="layer1"><img src="C:\Taiyab_AR\img\wallhaven-rr3x3m.jpg" onclick="moveimage('layer1')" height="100" width="100"/></div>
+    <div id ="layer2"><img src="C:\Taiyab_AR\img\peakpx.jpg" onclick="moveimage('layer2')" height="100" width="100"/></div>
+    <div id ="layer3"><img src="C:\Taiyab_AR\img\wallhaven-y8lqo7.jpg" onclick="moveimage('layer3')" height="100" width="100"/></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+function valid()
+{
+var myarray=new Array();
+for(var i=0;i<document.myform.length;i++)
+{                                                                                   
+if(document.myform.elements[i].value.length==0)
+{
+myarray.push(document.myform.elements[i].name);
+}
+}
+if(myarray.length!=0)
+window.alert("the textbox are emptyin:"+myarray);
+}
+</script>
+</head>
+<body>
+<form name="myform"  onsubmit="valid()">
+name:<input type="text" name="t1"/><br><br>
+class:<input type="text" name="t2" /><br><br>
+sec:<input type="text" name="t3" /><br><br>
+<input type="submit" value="check"/>
+</form>
+</body>
+</html>

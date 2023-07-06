@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript">
+function display(travelmode)
+{
+if(travelmode==1)
+window.alert("train fare is Rs 40");
+else if(travelmode==2)
+window.alert("bus fare is Rs 70");
+else
+window.alert("flight fare is Rs 5000");
+}
+</script>
+</head>
+<body>
+<form>
+train:<input type="radio" name="r1" onclick="display(1)"/>
+bus:<input type="radio" name="r1" onclick="display(2)"/>
+flight:<input type="radio" name="r1" onclick="display(3)"/>
+</form>
+</body>
+</html>

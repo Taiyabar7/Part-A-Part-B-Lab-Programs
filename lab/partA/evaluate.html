@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        p{color: blue;}
+    </style>
+    <script>
+        function evelute(){
+            var enteredExpr=document.getElementById("expr").value;
+            document.getElementById("result").value=eval(enteredExpr);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <p><label> Any valid expression:</label><input type="text" id="expr"/><br/></p>
+
+        <p><label> Result of the expression:</label><input type="text" id="result"/><br/></p>
+
+        <input type="button" value="evelute" onclick="evelute()"/><br/>
+    </form>
+</body>
+</html>

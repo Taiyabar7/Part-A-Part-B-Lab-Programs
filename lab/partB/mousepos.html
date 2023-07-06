@@ -1,0 +1,15 @@
+<html>
+<head>
+<script>
+function findmouse(evt)
+{
+document.getElementById("showxy").value="clientX="+evt.clientX +"clientY="+evt.clientY;
+}
+</script>
+</head>
+<body onmousemove="findmouse(event)">
+<form>
+Mouse positions are:<input type="text" id="showxy" size="50"/>
+</form>
+</body>
+</html>

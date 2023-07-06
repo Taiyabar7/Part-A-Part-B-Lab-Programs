@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Salary Details</title>
+    <script type="text/javascript">
+        function showSalary()
+        {
+        var empname=document.getElementById("empname").value;
+        var empno=document.getElementById("empno").value;
+        var basic=parseInt(document.getElementById("basic").value);
+        var hra=basic*0.4;
+        var da=basic*0.6;
+        var gross=basic+hra+da;
+        var pf=gross*0.13;
+        var tax=gross*0.2;
+        var deductions=pf+tax;
+        var netsalary=gross-deductions;
+        document.writeln("<table border='5'>");
+        document.writeln("<tr><th>Employee Salary Breakup Details</th></tr>");
+        document.writeln("<tr><td>Employee Name</td><td>"+empname+"</td></tr>");
+        document.writeln("<tr><td>Employee Number</td><td>"+empno+"</td></tr>");
+        document.writeln("<tr><td>Basic Salary</td><td>"+basic+"</td></tr>");
+        document.writeln("<tr><td>HRA(40%ofbasic)</td><td>"+hra+"</td></tr>");
+        document.writeln("<tr><td>DA(60%ofbasic)</td><td>"+da+"</td></tr>");
+        document.writeln("<tr><td>GrossSalary</td><td>"+gross+"</td></tr>");
+        document.writeln("<tr><td>PF(13%ofbasic)</td><td>"+pf+"</td></tr>");
+        document.writeln("<tr><td>Tax(20%ofgross)</td><td>"+tax+"</td></tr>");
+        document.writeln("<tr><td>Deductions+tax+PF</td><td>"+deductions+"</td></tr>");
+        document.writeln("<tr><td><b>NetSalary(Gross Deductions)</b></td><td><b>"+netsalary+"</b></td>");
+        document.writeln("</table>");
+    }
+    </script>
+</head>
+<body>
+    <form>
+ <table border="5">
+    <tr><th>Employee Details</th></tr>
+    <tr>
+        <td>
+            Employee Name:-
+        </td>
+        <td><input type="text" id="empname"/></td>
+    </tr>
+    <tr>
+        <td>Employee Number</td>
+        <td><input type="text" id="empno"/></td>
+    </tr>
+    <tr>
+        <td>Basic pay</td>
+        <td><input type="text" id="basic"/></td>
+    </tr>
+ </table>   
+ <br><input type="submit" value="Show Salary Details" onclick="showSalary()"/>
+ </form>
+</body>
+</html>

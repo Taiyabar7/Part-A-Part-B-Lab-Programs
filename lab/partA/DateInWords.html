@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+           var days=["first","second","third","fourth","fifth","sixth","seventh","eigth","ninth","tenth","eleventh","twelth","thirteenth","fourteenth","fifteenth","sixteenth","seventeenth","eighteenth","nineteenth","twentieth","twenty-first","twenty-second","twenty-third","twenty-fourth","twenty-fifth","twenty-sixth","twenty-seventh","twenty-eighth","twenty-ninth","thirtieth","thirty-first"];
+            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            var year ="Two thousand and twenty three"
+            var dateobj=new Date();
+            var currmonth=dateobj.getMonth();
+            var currdate=dateobj.getDate();
+            var curryear=dateobj.getFullYear();
+            if (curryear==2023)
+            window.alert("Today date is "+days[currdate-1]+" "+months[currmonth]+" "+year);
+            else
+            alert("today date is "+ days[currdate-1]+" "+months[currmonth]+" "+year);
+        </script>
+    </head>
+</html>
